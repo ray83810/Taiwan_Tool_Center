@@ -475,8 +475,7 @@ h1 {
 /* Tools Grid Layout (Level 2 - Responsive Grid) */
 .tools-grid {
     display: grid;
-    /* Uses CSS function min() to prevent card overflow on small viewports, ensuring 3+ columns on desktop */
-    grid-template-cols: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
+    grid-template-cols: repeat(2, 1fr);
     gap: 1.25rem;
 }
 
@@ -839,6 +838,10 @@ footer {
     .categories-grid {
         grid-template-cols: 1fr;
         gap: 1.5rem;
+    }
+    
+    .tools-grid {
+        grid-template-cols: 1fr;
     }
 }
 
