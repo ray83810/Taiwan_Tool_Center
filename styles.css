@@ -92,6 +92,16 @@ body::after {
     pointer-events: none;
 }
 
+/* SVG Sizing Utilities (Tailwind Compatibility) */
+.w-4 { width: 1rem !important; }
+.h-4 { height: 1rem !important; }
+.w-4\.5 { width: 1.125rem !important; }
+.h-4\.5 { height: 1.125rem !important; }
+.w-5 { width: 1.25rem !important; }
+.h-5 { height: 1.25rem !important; }
+.w-6 { width: 1.5rem !important; }
+.h-6 { height: 1.5rem !important; }
+
 @keyframes float-blob-1 {
     0% { transform: translate(0, 0) scale(1); }
     100% { transform: translate(10%, 15%) scale(1.1); }
