@@ -16,150 +16,157 @@
     <!-- Premium Interactive Grid Overlay -->
     <div class="grid-bg"></div>
 
-    <div class="container">
-        <!-- Header Section -->
-        <header>
-            <div class="back-btn-container">
-                <button id="back-btn" class="back-btn hidden" aria-label="返回類別選擇">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" style="width: 18px; height: 18px;">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
-                    </svg>
-                    返回分類
-                </button>
-            </div>
-            
-            <div class="logo-badge">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" style="width: 14px; height: 14px;">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 21L14.907 18M9.813 15.904L14.907 18M9.813 15.904l-1.047-5.074M14.907 18l3.12 3.12m0 0l1.414-1.414M18.027 21.12L15.9 14.908M15.9 14.908l-5.074-1.047M15.9 14.908l3.12-3.12M10.826 13.861L9 12l-6.12 2.12m0 0L4.293 12.7M2.88 14.12L9 8M9 8l5.074 1.047M9 8L5.88 4.88m0 0L4.466 6.294M5.88 4.88L8 11" />
-                </svg>
-                Taiwan Tools Center
-            </div>
-            <h1 id="page-title">Taiwan 工具總覽</h1>
-            <p id="page-subtitle" class="subtitle">請選擇工具類別以開始使用</p>
-        </header>
-
-        <!-- Stats Overview Bar -->
-        <section class="stats-container" aria-label="工具統計資訊">
-            <div class="stat-card">
-                <div class="stat-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="width: 20px; height: 20px;">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-16.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-16.25v16.25" />
-                    </svg>
-                </div>
-                <div class="stat-info">
-                    <span class="stat-label">全部工具</span>
-                    <span id="stat-total" class="stat-value">0</span>
-                </div>
-            </div>
-            
-            <div class="stat-card">
-                <div class="stat-icon" style="color: var(--accent-purple);">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="width: 20px; height: 20px;">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 13.5h3.86a2.25 2.25 0 012.008 1.24l.885 1.77a2.25 2.25 0 002.007 1.24h1.98a2.25 2.25 0 002.007-1.24l.885-1.77a2.25 2.25 0 012.007-1.24h3.86m-18 0h18" />
-                    </svg>
-                </div>
-                <div class="stat-info">
-                    <span class="stat-label">Ops 相關</span>
-                    <span id="stat-ops" class="stat-value">0</span>
-                </div>
-            </div>
-
-            <div class="stat-card">
-                <div class="stat-icon" style="color: var(--accent-green);">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="width: 20px; height: 20px;">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75" />
-                    </svg>
-                </div>
-                <div class="stat-info">
-                    <span class="stat-label">一般工具</span>
-                    <span id="stat-general" class="stat-value">0</span>
-                </div>
-            </div>
-
-            <div class="stat-card">
-                <div class="stat-icon" style="color: var(--accent-yellow);">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="width: 20px; height: 20px;">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499c.151-.312.592-.312.743 0l3.007 6.208 6.761.986c.343.05.48.474.232.718l-4.893 4.77 1.154 6.732c.059.345-.304.609-.611.446L12 20.08l-6.03 3.193c-.307.163-.67-.101-.611-.446l1.154-6.732-4.893-4.77c-.248-.244-.11-.669.232-.718l6.761-.986 3.007-6.208z" />
-                    </svg>
-                </div>
-                <div class="stat-info">
-                    <span class="stat-label">常用釘選</span>
-                    <span id="stat-starred" class="stat-value">0</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- Level 1: Category Selection Grid -->
-        <main id="level-1-categories" class="categories-grid">
-            <!-- Ops Cards -->
-            <div class="category-card ops-card" onclick="showCategory('ops')">
-                <div class="category-illustration">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.2" stroke="currentColor" style="width: 36px; height: 36px;">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 13.5h3.86a2.25 2.25 0 012.008 1.24l.885 1.77a2.25 2.25 0 002.007 1.24h1.98a2.25 2.25 0 002.007-1.24l.885-1.77a2.25 2.25 0 012.007-1.24h3.86m-18 0h18a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v4.5A2.25 2.25 0 002.25 13.5z" />
-                    </svg>
-                </div>
-                <h2>Ops 相關工具</h2>
-                <p>包含抽樣、分數分析、班表自動化與來電原因分析等專業營運輔助工具</p>
-            </div>
-
-            <!-- General Cards -->
-            <div class="category-card general-card" onclick="showCategory('general')">
-                <div class="category-illustration">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.2" stroke="currentColor" style="width: 36px; height: 36px;">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.34 15.84c-.68-.34-1.44-.08-1.78.6l-3.23 6.45c-.34.68-.08 1.44.6 1.78.68.34 1.44.08 1.78-.6l3.23-6.45c.34-.68.08-1.44-.6-1.78zM21.75 19.5H2.25M12 3v3.75m0 0A3.75 3.75 0 1012 12c.966 0 1.841-.365 2.5-1m-2.5-4.25a3.75 3.75 0 013 3" />
-                    </svg>
-                </div>
-                <h2>一般工具</h2>
-                <p>提供 PDF 轉檔、檔案瘦身等日常業務通用型處理工具</p>
-            </div>
-        </main>
-
-        <!-- Level 2: Search, Filters and Tools grid -->
-        <section id="level-2-tools" class="hidden">
-            <!-- Search & Tabs Panel -->
-            <div id="controls-panel" class="controls-panel hidden">
-                <div class="search-wrapper">
-                    <div class="search-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="width: 18px; height: 18px;">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+    <!-- Main Two-Column Layout Wrapper -->
+    <div class="app-layout">
+        
+        <!-- Sidebar Column (Left) -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="back-btn-container">
+                    <button id="back-btn" class="back-btn hidden" aria-label="返回類別選擇">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" style="width: 16px; height: 16px;">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
                         </svg>
-                    </div>
-                    <input type="text" id="search-input" class="search-input" placeholder="搜尋工具名稱、描述或標籤...">
-                </div>
-                
-                <div class="filter-tabs">
-                    <button class="tab-btn" data-tab="all">全部</button>
-                    <button class="tab-btn" data-tab="ops">Ops 相關</button>
-                    <button class="tab-btn" data-tab="general">一般工具</button>
-                    <button class="tab-btn" data-tab="starred">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" style="width: 14px; height: 14px; color: var(--accent-yellow);">
-                            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
-                        </svg>
-                        常用釘選
+                        返回分類
                     </button>
                 </div>
+                
+                <div class="logo-badge">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" style="width: 13px; height: 13px;">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 21L14.907 18M9.813 15.904L14.907 18M9.813 15.904l-1.047-5.074M14.907 18l3.12 3.12m0 0l1.414-1.414M18.027 21.12L15.9 14.908M15.9 14.908l-5.074-1.047M15.9 14.908l3.12-3.12M10.826 13.861L9 12l-6.12 2.12m0 0L4.293 12.7M2.88 14.12L9 8M9 8l5.074 1.047M9 8L5.88 4.88m0 0L4.466 6.294M5.88 4.88L8 11" />
+                    </svg>
+                    Taiwan Tools Center
+                </div>
+                <h1 id="page-title">Taiwan 工具總覽</h1>
+                <p id="page-subtitle" class="subtitle">請選擇工具類別以開始使用</p>
             </div>
 
-            <!-- Tools Grid Container -->
-            <div id="tools-container" class="tools-grid">
-                <!-- Dynamically Rendered by JS -->
+            <!-- Stats Overview Bar (Moved to Left Side) -->
+            <section class="stats-container" aria-label="工具統計資訊">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="width: 18px; height: 18px;">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-16.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-16.25v16.25" />
+                        </svg>
+                    </div>
+                    <div class="stat-info">
+                        <span class="stat-label">全部工具</span>
+                        <span id="stat-total" class="stat-value">0</span>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon" style="color: var(--accent-purple);">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="width: 18px; height: 18px;">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 13.5h3.86a2.25 2.25 0 012.008 1.24l.885 1.77a2.25 2.25 0 002.007 1.24h1.98a2.25 2.25 0 002.007-1.24l.885-1.77a2.25 2.25 0 012.007-1.24h3.86m-18 0h18" />
+                        </svg>
+                    </div>
+                    <div class="stat-info">
+                        <span class="stat-label">Ops 相關</span>
+                        <span id="stat-ops" class="stat-value">0</span>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon" style="color: var(--accent-green);">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="width: 18px; height: 18px;">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75" />
+                        </svg>
+                    </div>
+                    <div class="stat-info">
+                        <span class="stat-label">一般工具</span>
+                        <span id="stat-general" class="stat-value">0</span>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon" style="color: var(--accent-yellow);">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="width: 18px; height: 18px;">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499c.151-.312.592-.312.743 0l3.007 6.208 6.761.986c.343.05.48.474.232.718l-4.893 4.77 1.154 6.732c.059.345-.304.609-.611.446L12 20.08l-6.03 3.193c-.307.163-.67-.101-.611-.446l1.154-6.732-4.893-4.77c-.248-.244-.11-.669.232-.718l6.761-.986 3.007-6.208z" />
+                        </svg>
+                    </div>
+                    <div class="stat-info">
+                        <span class="stat-label">常用釘選</span>
+                        <span id="stat-starred" class="stat-value">0</span>
+                    </div>
+                </div>
+            </section>
+        </aside>
+
+        <!-- Main Workspace Column (Right) -->
+        <main class="main-content">
+            <!-- Level 1: Category Selection Grid -->
+            <div id="level-1-categories" class="categories-grid">
+                <!-- Ops Cards -->
+                <div class="category-card ops-card" onclick="showCategory('ops')">
+                    <div class="category-illustration">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.2" stroke="currentColor" style="width: 36px; height: 36px;">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 13.5h3.86a2.25 2.25 0 012.008 1.24l.885 1.77a2.25 2.25 0 002.007 1.24h1.98a2.25 2.25 0 002.007-1.24l.885-1.77a2.25 2.25 0 012.007-1.24h3.86m-18 0h18a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v4.5A2.25 2.25 0 002.25 13.5z" />
+                        </svg>
+                    </div>
+                    <h2>Ops 相關工具</h2>
+                    <p>包含抽樣、分數分析、班表自動化與來電原因分析等專業營運輔助工具</p>
+                </div>
+
+                <!-- General Cards -->
+                <div class="category-card general-card" onclick="showCategory('general')">
+                    <div class="category-illustration">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.2" stroke="currentColor" style="width: 36px; height: 36px;">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M10.34 15.84c-.68-.34-1.44-.08-1.78.6l-3.23 6.45c-.34.68-.08 1.44.6 1.78.68.34 1.44.08 1.78-.6l3.23-6.45c.34-.68.08-1.44-.6-1.78zM21.75 19.5H2.25M12 3v3.75m0 0A3.75 3.75 0 1012 12c.966 0 1.841-.365 2.5-1m-2.5-4.25a3.75 3.75 0 013 3" />
+                        </svg>
+                    </div>
+                    <h2>一般工具</h2>
+                    <p>提供 PDF 轉檔、檔案瘦身等日常業務通用型處理工具</p>
+                </div>
             </div>
-        </section>
 
-        <!-- Toast Notifications popup -->
-        <div id="toast" class="toast" role="alert" aria-live="assertive">
-            <span class="toast-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" style="width: 20px; height: 20px;">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-            </span>
-            <span id="toast-text">設定已儲存</span>
-        </div>
+            <!-- Level 2: Search, Filters and Tools grid -->
+            <div id="level-2-tools" class="hidden">
+                <!-- Search & Tabs Panel -->
+                <div id="controls-panel" class="controls-panel">
+                    <div class="search-wrapper">
+                        <div class="search-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="width: 18px; height: 18px;">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                            </svg>
+                        </div>
+                        <input type="text" id="search-input" class="search-input" placeholder="搜尋工具名稱、描述或標籤...">
+                    </div>
+                    
+                    <div class="filter-tabs">
+                        <button class="tab-btn" data-tab="all">全部</button>
+                        <button class="tab-btn" data-tab="ops">Ops 相關</button>
+                        <button class="tab-btn" data-tab="general">一般工具</button>
+                        <button class="tab-btn" data-tab="starred">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" style="width: 14px; height: 14px; color: var(--accent-yellow);">
+                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                            </svg>
+                            常用釘選
+                        </button>
+                    </div>
+                </div>
 
-        <!-- Footer -->
-        <footer>
-            <p>© 2026 Taiwan Tools Hub. Designed with premium commercial style.</p>
-        </footer>
+                <!-- Tools Grid Container -->
+                <div id="tools-container" class="tools-grid">
+                    <!-- Dynamically Rendered by JS -->
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer>
+                <p>© 2026 Taiwan Tools Hub. Designed with premium commercial style.</p>
+            </footer>
+        </main>
+    </div>
+
+    <!-- Toast Notifications popup -->
+    <div id="toast" class="toast" role="alert" aria-live="assertive">
+        <span class="toast-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" style="width: 20px; height: 20px;">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+        </span>
+        <span id="toast-text">設定已儲存</span>
     </div>
 
     <!-- App Script -->
