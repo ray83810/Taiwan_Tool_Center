@@ -839,10 +839,6 @@ footer {
         grid-template-cols: 1fr;
         gap: 1.5rem;
     }
-    
-    .tools-grid {
-        grid-template-cols: 1fr;
-    }
 }
 
 @media (max-width: 560px) {
@@ -858,5 +854,9 @@ footer {
     
     .app-layout {
         padding: 1.5rem 1rem;
+    }
+    
+    .tools-grid {
+        grid-template-cols: 1fr;
     }
 }
