@@ -158,6 +158,19 @@ const tools = [
             <path stroke-linecap="round" stroke-linejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
         </svg>`
     },
+    {
+        id: "softphone-trs-analyzer",
+        title: "Softphone/TRS記錄分析工具",
+        url: "https://ray83810.github.io/Softphone-Trs_Tool/",
+        category: "ops",
+        theme: "theme-blue",
+        tag: "通話分析",
+        description: "上傳並分析 Softphone 與 TRS 系統通話與登入紀錄，視覺化通話時長與座席狀態。",
+        icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-2.824-1.554-5.147-3.877-6.699-6.699l1.293-.97a1.125 1.125 0 00.417-1.173L6.763 2.15a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 3v5.25m0 0H21m-5.25 0L21 3" />
+        </svg>`
+    },
     // General Tools
     {
         id: "pdf-converter",
