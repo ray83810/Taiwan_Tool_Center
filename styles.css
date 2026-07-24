@@ -115,10 +115,10 @@ body::after {
 /* Two-Column App Layout Container */
 .app-layout {
     display: flex;
-    max-width: 1440px;
+    max-width: 1720px;
     margin: 0 auto;
     padding: 3rem 2rem;
-    gap: 3.5rem;
+    gap: 3rem;
     min-height: 100vh;
     position: relative;
     z-index: 1;
@@ -475,7 +475,7 @@ h1 {
 /* Tools Grid Layout (Level 2 - Responsive Grid) */
 .tools-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.25rem;
 }
 
@@ -828,6 +828,12 @@ footer {
     }
 }
 
+@media (max-width: 1280px) {
+    .tools-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (max-width: 768px) {
     .controls-panel {
         flex-direction: column;
@@ -838,6 +844,10 @@ footer {
     .categories-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
+    }
+
+    .tools-grid {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -854,10 +864,6 @@ footer {
     
     .app-layout {
         padding: 1.5rem 1rem;
-    }
-    
-    .tools-grid {
-        grid-template-columns: 1fr;
     }
 }
 
